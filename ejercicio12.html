@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=t">
+    <title>Elementos de Interes Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-4">
+        <div class="row">
+            <div class="bg-info p-3 rounded-3">
+                <div class="container-fluid py-5">
+                    <h1 class="fw-bold">Jumbotron Personalizado</h1>
+                    <p class="col-md-8 text-dark fs-5">
+                        Este es el mensaje o contenido principal del jumbotron
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        LLamada a la accion
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Ejercicio #12 Bootstrap</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Este es el body o cuerpo del modal
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="row mt-4">
+            <form class="d-block rounded py-3" style="border: 1px solid black;">
+                <h6 class="display-1 text-light-emphasis">Formulario de contacto</h6>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Digita tu nombre</label>
+
+                    <input type="text" placeholder="Tu Nombre..." class="form-control" id="nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Digita tu numero telefonico</label>
+
+                    <input type="number" class="form-control" id="telefono">
+                </div>
+                <div>
+                    <label for="mensaje" class="form-label">Escribe tu mensaje aqui</label>
+
+                    <textarea class="form-control" rows="3" name="mensaje" id="mensaje">
+
+                    </textarea>
+                </div>
+            </form>
+
+            <div class="row m-auto mt-5 d-flex align-items-center justify-content-center">
+                <div class="card text-center w-50">
+                    <div class="card-header">
+                        <h1 class="display-2 card-title">Juan Felipe Marin Molina</h1>
+                    </div>
+                    <div class="card-body">
+                        <p class="fst-italic">Principalmente lo que me mas llama la atencion del ecosistema del desarollo, es la capacidad de crear proyectos y aplicaciones a gran escala, me perfilo como un desarrollador front-end.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span>
+                            <a href="#">juanfelipemm2004@gmail.com</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+</html>
